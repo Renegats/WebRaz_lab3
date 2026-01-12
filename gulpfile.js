@@ -10,7 +10,7 @@ import img from "./gulp/tasks/img.js";
 import { ttf, otfToTtf, ttfToWoff, fonts } from "./gulp/tasks/fonts.js";
 import files from "./gulp/tasks/files.js";
 
-// Ð³Ð»Ð¾Ð±Ð°Ð»ÑŒÐ½Ñ‹Ðµ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ðµ
+// глобальные переменные
 global.app = {
   isBuild: process.argv.includes("--build"),
   isDev: !process.argv.includes("--build"),
@@ -19,15 +19,15 @@ global.app = {
   plugins: plugins,
 };
 
-// Ñ‚Ð°Ñ�Ðº Ð´Ð»Ñ� ÐºÐ¾Ð½Ð²ÐµÑ€Ñ‚Ð°Ñ†Ð¸Ð¸ ÑˆÑ€Ð¸Ñ„Ñ‚Ð¾Ð²
+// таск для конвертации шрифтов
 gulp.task("optimize", async function () {
   return gulp.series(ttf, otfToTtf, ttfToWoff);
 });
 
-// Ð¾Ñ�Ð½Ð¾Ð²Ð½Ñ‹Ðµ Ð·Ð°Ð´Ð°Ñ‡Ð¸
+// основные задачи
 const mainTasks = gulp.parallel(files, html, scss, js, img, fonts);
 
-// Ð½Ð°Ð±Ð»ÑŽÐ´Ð°Ñ‚ÐµÐ»Ð¸ Ð·Ð° Ñ�Ð¼ÐµÐ½Ð¾Ð¹ Ñ„Ð°Ð¹Ð»Ð¾Ð² Ð´Ð»Ñ� Ð¿ÐµÑ€ÐµÑ�Ð±Ð¾Ñ€ÐºÐ¸
+// наблюдатели за сменой файлов для пересборки
 function watcher() {
   gulp.watch(paths.watch.files, files);
   gulp.watch(paths.watch.html, html);
@@ -36,7 +36,7 @@ function watcher() {
   gulp.watch(paths.watch.img, img);
 }
 
-// Ñ�Ñ†ÐµÐ½Ð°Ñ€Ð¸Ð¸
+// сценарии
 const dev = gulp.series(cleanDist, mainTasks, gulp.parallel(server, watcher));
 const build = gulp.series(cleanDist, mainTasks);
 

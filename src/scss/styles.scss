@@ -1,4 +1,4 @@
-/* Подключение шрифтов */
+/* ????????? ???????????????? ?????? */
 @font-face {
   font-family: "ManropeBold";
   src: url(../fonts/Manrope-Bold.ttf);
@@ -14,8 +14,7 @@
   src: url(../fonts/Manrope-Light.ttf);
 }
 
-/* Сброс базовых стилей */
-
+/* ????????????? ????? ?????? */
 * {
   padding: 0;
   margin: 0;
@@ -24,8 +23,7 @@
   outline: none;
 }
 
-/* Общие стили для всего приложения */
-
+/* ????????? body ? ???????? ????????? */
 body {
   background: #040C18;
   padding: 0 2rem;
@@ -36,13 +34,14 @@ body.oh {
   overflow: hidden;
 }
 
-#root {
+.page {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
+/* ?????????? ????? ??? ?????? ? ?????? */
 a {
   color: #fff;
   text-decoration: none;
@@ -76,6 +75,7 @@ ul li {
   list-style-type: none;
 }
 
+/* ????? ??? ?????????? ? ?????????? ???????? */
 h1 {
   font-size: 60px;
   color: #ae67fa;
@@ -105,6 +105,7 @@ p {
   color: #fff;
 }
 
+/* ??????? ????? ??? ?????? ? ?????? */
 .btn {
   display: flex;
   padding: 1rem 2rem;
@@ -128,16 +129,16 @@ p {
   width: 100%;
 }
 
+/* ????? ??? ?????????? ? ????????????? ??????? */
 .lined_header {
   background: url("../assets/img/gradient_line.svg") no-repeat 0 0 transparent;
   padding: 1rem 0;
 }
 
-/* Стили для Шапки */
-
+/* ????? ??? ????????????? ?????? */
 .header {
   display: flex;
-  max-width: 100vw; 
+  max-width: 100vw;
   margin: 0 auto;
   width: 100%;
   padding: 1rem 1.5rem;
@@ -157,6 +158,7 @@ p {
   column-gap: 2rem;
 }
 
+/* ????? ??? ?????????? ???? ? ??????? */
 .header .header__right {
   display: flex;
   justify-content: flex-end;
@@ -250,14 +252,13 @@ p {
   column-gap: 1rem;
 }
 
-/* Стили для первого экрана (Хиро секция) */
-
+/* ?????-?????? ? ?????????? ? ???????????? */
 .hero_section {
   display: flex;
   justify-content: space-between;
   column-gap: 1rem;
-  /* min-height: 60vh; */
-  padding: 14rem 0 3rem;
+  min-height: 60vh;
+  margin: 14rem 0 3rem;
 }
 
 .hero_section .hero_section__left {
@@ -300,20 +301,16 @@ p {
   width: 100%;
 }
 
-/* Секция брендов */
-
+/* ?????? ? ?????????? ????????? */
 .brands_section {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 2rem;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0;
+  padding: 0 0 6rem 0;
   column-gap: 3rem;
 }
 
-/* Что такое Chat GPT */
-
+/* ?????? "??? ????? ChatGPT" */
 .what_is_chatgpt_section {
   display: flex;
   flex-direction: column;
@@ -325,7 +322,6 @@ p {
 
 .what_is_chatgpt_section .what_is_chatgpt_section__top {
   display: flex;
-  column-gap: 3rem;
 }
 
 .what_is_chatgpt_section .what_is_chatgpt_section__top .top__header {
@@ -377,16 +373,15 @@ p {
 }
 
 .what_is_chatgpt_section
-  .what_is_chatgpt_section__bottom
-  .bottom__container
-  .container__content {
+.what_is_chatgpt_section__bottom
+.bottom__container
+.container__content {
   color: #81afdd;
   font-size: 14px;
   line-height: 1.8;
 }
 
-/* Будущее наступило */
-
+/* ?????? "??????? ?????????" */
 .future_here {
   display: flex;
   column-gap: 6rem;
@@ -436,15 +431,11 @@ p {
   color: #81afdd;
 }
 
-/*
-Превосходя все ожидания
-exceeding all expectations
-*/
+/* ?????? "?????????? ??? ????????" */
 .exceed_all_exp {
   display: flex;
-  column-gap: 3rem;
+  column-gap: 2rem;
   width: 78rem;
-  margin-right: 10vw;
 }
 
 .exceed_all_exp .exceed_all_exp__left {
@@ -463,12 +454,12 @@ exceeding all expectations
   margin-top: 14rem;
 }
 
-.exceed_all_exp .exceed_all_exp__right .early_access{
+.exceed_all_exp .exceed_all_exp__right .early_access {
   color: #71E5FF;
   margin-bottom: 1rem;
 }
 
-.exceed_all_exp .exceed_all_exp__right .exceed_all_exp__right__header{
+.exceed_all_exp .exceed_all_exp__right .exceed_all_exp__right__header {
   width: 60%;
 }
 
@@ -476,42 +467,45 @@ exceeding all expectations
   color: #81afdd;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
-  
 }
 
-.exceed_all_exp .exceed_all_exp__right .early_access_link{
+.exceed_all_exp .exceed_all_exp__right .early_access_link {
   color: #f49867;
   border-bottom: 1px solid transparent;
 }
 
-// Кнопка 
-.req_square{
+/* ???????????? ?????? ??? ??????????? */
+.req_square {
   display: flex;
   column-gap: 2rem;
   width: 90vw;
   max-width: 1170px;
   height: 11.5rem;
-  background-image: linear-gradient(to right, #ad67f9,#f2966c);
-  border-radius:  10px;
+  background-image: linear-gradient(to right, #ad67f9, #f2966c);
+  border-radius: 10px;
   margin-top: 8rem;
   justify-content: space-between;
 }
-.req_text{
+
+.req_text {
   font-family: "Manrope", sans-serif;
   font-size: 12px;
   padding-top: 3rem;
   padding-left: 3rem;
 }
-.req_text2{
+
+.req_text2 {
   font-family: "Manrope", sans-serif;
   font-size: 24px;
   font-weight: 1000;
   padding-left: 3rem;
 }
-.req_left{
+
+.req_left {
   padding-top: 4rem;
 }
-.req_button{
+
+.req_button {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-weight: 1000;
@@ -519,12 +513,12 @@ exceeding all expectations
   color: white;
   width: 190px;
   height: 60px;
-  border-radius:  40px;
+  border-radius: 40px;
   border: black;
   margin-right: 2rem;
 }
 
-/* Блог */
+/* ???? ? ?????????? ?????? */
 .squares_header {
   margin-right: 28rem;
   margin-top: 6rem;
@@ -532,51 +526,51 @@ exceeding all expectations
   height: 150px;
 }
 
-.squares{
+.squares {
   display: flex;
   column-gap: 3rem;
   margin-top: 6rem;
 }
 
-.square1{
+.square1 {
   width: 417px;
   height: 695px;
-  border-radius: 50px 0 0 0 ;
+  border-radius: 50px 0 0 0;
   background-color: #042C54;
 }
 
-.square2_1{
+.square2_1 {
   width: 327px;
   height: 323px;
-  border-radius: 50px 0 0 0 ;
+  border-radius: 50px 0 0 0;
   background-color: #042C54;
 }
 
-.square2_2{
-  width: 327px;
-  height: 323px;
-  margin-top: 3rem;
-  border-radius: 50px 0 0 0 ;
-  background-color: #042C54;
-}
-
-.square3_1{
-  width: 327px;
-  height: 323px;
-  border-radius: 50px 0 0 0 ;
-  background-color: #042C54;
-}
-
-.square3_2{
+.square2_2 {
   width: 327px;
   height: 323px;
   margin-top: 3rem;
-  border-radius: 50px 0 0 0 ;
+  border-radius: 50px 0 0 0;
+  background-color: #042C54;
+}
+
+.square3_1 {
+  width: 327px;
+  height: 323px;
+  border-radius: 50px 0 0 0;
+  background-color: #042C54;
+}
+
+.square3_2 {
+  width: 327px;
+  height: 323px;
+  margin-top: 3rem;
+  border-radius: 50px 0 0 0;
   background-color: #042C54;
 }
 
 .square1_img {
-  width: 417px;;
+  width: 417px;
 }
 
 .square2_1_img {
@@ -613,7 +607,16 @@ exceeding all expectations
   margin-left: 1rem;
 }
 
-/*ending*/
+/* ?????????? ????????????? */
+#people_last_24h {
+  display: inline-block;
+  color: white;
+  font-size: small;
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+/* ????? ????? */
 .end {
   display: flex;
   flex-direction: column;
@@ -736,25 +739,27 @@ exceeding all expectations
   text-align: center;
 }
 
-
-/* Медиа запросы для адаптива */
-
+/* ??????? ??? ????????? ? ????????? ????????? */
 @media screen and (max-width: 900px) {
   .hero_section {
     flex-direction: column;
   }
+  
   .hero_section .hero_section__left {
     width: 100%;
   }
+  
   .hero_section .hero_section__right img {
     width: 80%;
     margin-top: 1rem;
     margin-left: 10%;
   }
+  
   .future_here {
     flex-direction: column;
     width: 95%;
   }
+  
   .future_here .future_here__right .right__container .container__content {
     margin-top: 1rem;
   }
@@ -764,15 +769,15 @@ exceeding all expectations
   .page {
     align-content: center;
   }
-
+  
   .header {
     padding: 2rem;
   }
-
+  
   .header .header__logo .logo__link img {
     width: 200%;
   }
-
+  
   .header .header__right {
     flex-direction: column-reverse;
     justify-content: center;
@@ -788,29 +793,29 @@ exceeding all expectations
     z-index: 9999;
     background: #031b34;
   }
-
+  
   .header .header__menu {
     display: flex;
     flex-direction: column;
     position: relative;
   }
-
+  
   .header .header__menu .menu {
     flex-direction: column;
     align-items: center;
     row-gap: 1rem;
   }
-
+  
   .header .header__menu .menu__close {
     position: absolute;
     right: -100px;
     top: -100px;
   }
-
+  
   .header .header__menu .menu .menu__item a {
     font-size: 48px;
   }
-}  
+}
 
 @media screen and (max-width: 500px) {
   #people_last_24h {
@@ -819,15 +824,10 @@ exceeding all expectations
 }
 
 @media screen and (max-width: 1030px) {
-
-  .exceed_all_exp {     
-    margin-right: 0;
-  }
-
   h1 {
     font-size: 40px;
   }
-
+  
   .squares_header {
     margin: 1rem;
     align-content: center;
@@ -835,73 +835,72 @@ exceeding all expectations
     width: 100%;
     text-align: center;
   }
-
+  
   .squares {
     flex-wrap: wrap;
     column-gap: 0;
     margin: 1rem;
-    margin-left: 10vw;
     justify-content: center;
     width: 80%;
   }
-
+  
   .square1 {
     width: 100%;
     height: 44rem;
     margin-bottom: 3rem;
     border-radius: 5rem 0 0 0;
   }
-
+  
   .square3 {
     margin-top: 3rem;
   }
-
+  
   .square2_1 {
     width: 100%;
     height: 28rem;
     border-radius: 5rem 0 0 0;
   }
-
+  
   .square2_2 {
     width: 100%;
     height: 28rem;
     border-radius: 5rem 0 0 0;
   }
-
+  
   .square3_1 {
     width: 100%;
     height: 28rem;
     border-radius: 5rem 0 0 0;
   }
-
+  
   .square3_2 {
     width: 100%;
     height: 28rem;
     border-radius: 10rem 0 0 0;
   }
-
+  
   .square1_img {
     width: 100%;
   }
-
+  
   .square2_1_img {
     width: 100%;
   }
-
+  
   .square1_date {
     padding-top: 0;
   }
-
+  
   .square1_content {
     font-size: 20px;
     padding-top: 2rem;
     padding-bottom: 3rem;
   }
-
+  
   .date {
     padding-top: 0;
   }
-
+  
   .square2_1_content {
     font-size: 20px;
   }
@@ -915,17 +914,17 @@ exceeding all expectations
   h2 {
     font-size: 28px;
   }
-
+  
   h3 {
     font-size: 18px;
   }
-
+  
   .brands_section {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 1rem;
   }
-
+  
   .what_is_chatgpt_section {
     display: flex;
     flex-direction: column;
@@ -950,7 +949,7 @@ exceeding all expectations
   .what_is_chatgpt_section .what_is_chatgpt_section__middle .middle__header {
     width: 15rem;
   }
-    
+  
   .what_is_chatgpt_section .what_is_chatgpt_section__bottom {
     display: flex;
     flex-direction: column;
@@ -969,12 +968,7 @@ exceeding all expectations
     line-height: 1.8;
     padding-bottom: 2rem;
   }
-
-  .lined_header {
-    background: url(../assets/img/gradient_line.svg) no-repeat 0 0 transparent;
-    padding: 1rem 0;
-  }
-
+  
   .squares_header {
     margin: 1rem;
     align-content: center;
@@ -982,74 +976,67 @@ exceeding all expectations
     height: 14rem;
     text-align: center;
   }
-
+  
   .squares {
     flex-wrap: wrap;
     column-gap: 0;
+    margin: 1rem;
     justify-content: center;
   }
-
+  
   .square1 {
     width: 100%;
     height: 38rem;
     margin-bottom: 3rem;
     border-radius: 5rem 0 0 0;
   }
-
+  
   .square2_1 {
     width: 100%;
     height: 25rem;
     border-radius: 5rem 0 0 0;
   }
-
+  
   .square2_2 {
     width: 100%;
     height: 25rem;
     border-radius: 5rem 0 0 0;
   }
-
+  
   .square3_1 {
     width: 100%;
     height: 25rem;
     border-radius: 5rem 0 0 0;
   }
-
+  
   .square3_2 {
     width: 100%;
     height: 25rem;
     border-radius: 5rem 0 0 0;
   }
-
+  
   .square1_img {
     width: 100%;
   }
-
+  
   .square2_1_img {
     width: 100%;
   }
-
-  .square1_img {
-    width: 100%;
-  }
-
-  .square2_1_img {
-    width: 100%;
-  }
-
+  
   .square1_date {
     padding-top: 0;
   }
-
+  
   .square1_content {
     font-size: 20px;
     padding-top: 2rem;
     padding-bottom: 4rem;
   }
-
+  
   .date {
     padding-top: 0;
   }
-
+  
   .square2_1_content {
     font-size: 20px;
   }
@@ -1059,40 +1046,47 @@ exceeding all expectations
   .right__container {
     flex-direction: column;
   }
+  
   .future_here .future_here__right .right__container .container__header {
     width: 100%;
   }
+  
   .future_here .future_here__right .right__container .container__content {
     width: 100%;
     margin-top: 0;
   }
+  
   .req_square {
     height: 16rem;
     flex-direction: column;
   }
+  
   .req_button {
     margin-left: 2.5rem;
     margin-bottom: 2.5rem;
   }
+  
   .req_left {
     padding-top: 0.5rem;
   }
-  .req_text2{
+  
+  .req_text2 {
     margin-left: -0.5rem;
   }
+  
   .req_text {
     margin-left: -0.5rem;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .exceed_all_exp {     
+  .exceed_all_exp {
     flex-direction: column;
     width: 90%;
   }
   
   .exceed_all_exp .exceed_all_exp__left {
-    width: 100%;
+    width: 100%
   }
   
   .exceed_all_exp__left img {
@@ -1103,18 +1097,17 @@ exceeding all expectations
   .exceed_all_exp .exceed_all_exp__right {
     width: 100%;
     margin-top: 1rem;
-  }  
+  }
 }
 
-@media screen and (max-width: 1030px) and (min-width: 700px){
-  .exceed_all_exp {     
+@media screen and (max-width: 1030px) and (min-width: 700px) {
+  .exceed_all_exp {
     flex-direction: row;
     width: 90%;
   }
   
   .exceed_all_exp .exceed_all_exp__left {
     width: 100%
-    
   }
   
   .exceed_all_exp__left img {
@@ -1125,9 +1118,9 @@ exceeding all expectations
   .exceed_all_exp .exceed_all_exp__right {
     width: 100%;
     margin-top: 1rem;
-  }  
-
-  .exceed_all_exp .exceed_all_exp__right .exceed_all_exp__right__header{
+  }
+  
+  .exceed_all_exp .exceed_all_exp__right .exceed_all_exp__right__header {
     width: 30vw;
   }
 }
@@ -1142,9 +1135,11 @@ exceeding all expectations
   .end_squares {
     column-gap: 5vw;
   }
+  
   .end_header {
     width: 90vw;
   }
+  
   .early_access_btn {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1153,50 +1148,63 @@ exceeding all expectations
 }
 
 @media screen and (max-width: 850px) {
-  .end{
+  .end {
     align-items: flex-start;
   }
+  
   .end_squares {
     flex-direction: column;
     margin-left: 5vw;
   }
+  
   .end_header {
     margin-left: 5vw;
   }
+  
   .early_access_btn {
     margin-bottom: 2rem;
     align-items: center;
     width: 40%;
     margin-left: 30vw;
   }
-  .square1_end{
+  
+  .square1_end {
     margin-top: 2rem;
   }
-  .square2_end{
+  
+  .square2_end {
     margin-top: 2rem;
   }
-  .square3_end{
+  
+  .square3_end {
     margin-top: 2rem;
   }
-  .square4_end{
+  
+  .square4_end {
     margin-top: 2rem;
   }
+  
   .end {
     height: 65rem;
   }
+  
   .links_content {
     margin-bottom: 0;
   }
+  
   .square_end_text {
     margin-top: 0;
     margin-bottom: 0;
   }
+  
   .links {
     margin-bottom: 1rem;
   }
+  
   .company {
     margin-bottom: 1rem;
   }
+  
   .contacts {
     margin-bottom: 1rem;
   }
@@ -1206,26 +1214,215 @@ exceeding all expectations
   .end {
     height: 70rem;
   }
-
   
   .square1 {
     height: 30rem;
   }
-
+  
   .square2_1 {
     height: 21rem;
   }
-
+  
   .square2_2 {
     height: 21rem;
   }
-
+  
   .square3_1 {
     height: 21rem;
   }
-
+  
   .square3_2 {
     height: 21rem;
   }
 }
+/* 4k - 2560px */
+@media screen and (min-width: 2560px) {
+  .section {
+    max-width: 2000px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  .hero_section {
+    margin-top: 20rem;
+  }
+  .brands_section {
+    gap: 5rem;
+  }
+  .exceed_all_exp {
+    width: 120rem;
+  }
+  .exceed_all_exp__left img {
+    width: 85%;
+  }
+  .req_square {
+    max-width: 1500px;
+    height: 14rem;
+  }
+  .end_header {
+    font-size: 4rem;
+    width: 70%;
+  }
+  .end_squares {
+    gap: 8vw;
+  }
+}
 
+/* Laptop L - 1440px */
+@media screen and (max-width: 1440px) {
+  .section {
+    max-width: 1200px;
+  }
+  .squares_header {
+    margin-top: 5rem;
+  }
+  .early_access_btn {
+    width: 25%;
+  }
+  .end_squares {
+    gap: 3vw;
+  }
+}
+
+/* Tablet - 768px */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .brands_section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .what_is_chatgpt_section {
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .what_is_chatgpt_section__top,
+  .what_is_chatgpt_section__middle,
+  .what_is_chatgpt_section__bottom {
+    flex-direction: column;
+  }
+  .middle__header {
+    width: 100%;
+  }
+  .bottom__container {
+    width: 100%;
+  }
+  .future_here {
+    flex-direction: column;
+  }
+  .squares_header {
+    width: 100%;
+    text-align: center;
+  }
+  .squares {
+    flex-direction: column;
+    align-items: center;
+  }
+  .square1, .square2_1, .square2_2, .square3_1, .square3_2 {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 2rem;
+  }
+  .square1 { height: 38rem; }
+  .square2_1, .square2_2, .square3_1, .square3_2 { height: 25rem; }
+  .end_squares {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+}
+
+/* Mobile L - 425px */
+@media screen and (max-width: 425px) {
+  body {
+    padding: 0 1rem;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .header {
+    padding: 1rem;
+  }
+  .hero_section {
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+  .hero_section__left {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .hero_section__right img {
+    width: 80%;
+  }
+  .left__cta_buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .left__cta_buttons input[type="text"],
+  .left__cta_buttons .btn {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .right__container {
+    flex-direction: column;
+  }
+  .right__container .container__header,
+  .right__container .container__content {
+    width: 100%;
+  }
+  .exceed_all_exp {
+    flex-direction: column;
+    width: 100%;
+  }
+  .exceed_all_exp__left img {
+    margin-left: 0;
+    width: 100%;
+  }
+  .exceed_all_exp__right {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .req_square {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  .req_button {
+    margin: 2rem auto;
+  }
+  .end {
+    height: auto;
+    padding: 2rem;
+    align-items: flex-start;
+  }
+  .early_access_btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto;
+  }
+  #people_last_24h {
+    font-size: 11px;
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .end_header {
+    font-size: 2rem;
+  }
+  .square1 { height: 30rem; }
+  .square2_1, .square2_2, .square3_1, .square3_2 { height: 21rem; }
+}
